@@ -1,0 +1,17 @@
+.for {
+margin: 0 auto;
+width: 300px;
+}
+
+textarea{
+    margin: 5px 5px 5px 5px;
+}
+
+h1.text{
+    display: inline;
+}
+
+input.text{
+    margin-left: 80%;
+    display: inline-block;
+}

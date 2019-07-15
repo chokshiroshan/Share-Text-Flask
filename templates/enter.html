@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Share Text </title>
+{% endblock %}
+
+{% block body %}
+<div class="align-self-center">
+    <h1 align="center">Enter Password for {{name}}:</h1>
+    <form action="/{{name}}" method="POST" class="form-inline for">
+            <input type="password" name="pass" id="pass" class="form-control mr-sm-2">
+            <input type="submit" value="submit" class="btn btn-primary">
+        <h4>{{msg}}</h4>
+        </form>
+</div>
+{% endblock %}

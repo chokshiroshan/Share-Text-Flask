@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Share Text</title>
+{% endblock %}
+
+{% block body %}
+<div>
+    <div>
+        <form action="/{{name}}&{{text.password}}" method="POST">
+            <div>
+                <h1 class="text">Enter Text:</h1><input type="submit" value="Save" class="btn btn-primary text">
+                <div class="form-group">
+           <textarea class="form-control" rows="30" cols="178" name="content" id="content" >{{ text.content }}</textarea>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+</div>
+{% endblock %}
